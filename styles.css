@@ -1,20 +1,26 @@
 .content{
-    font-family: Georgia, serif;
+    font-family: 'Times New Roman', Times, serif;
+    color:darkred;
     text-align: center;
+
 }
 #first{
-    font-family: impact,sans-serif;
-    color: red;
+    text-align: center;
+    
+    
 }
 img{
     display: block;
     margin: auto;
     height: 400px;
-    width: 400px;
+    width: 700px;
 }
+
+
 #second{
     text-align: center;
     word-wrap: break-word;
+    
 }
 #third{
     font-size: small;
