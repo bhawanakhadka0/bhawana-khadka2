@@ -1,0 +1,21 @@
+.content{
+    font-family: Georgia, serif;
+    text-align: center;
+}
+#first{
+    font-family: impact,sans-serif;
+    color: red;
+}
+img{
+    display: block;
+    margin: auto;
+    height: 400px;
+    width: 400px;
+}
+#second{
+    text-align: center;
+    word-wrap: break-word;
+}
+#third{
+    font-size: small;
+}
