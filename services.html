@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Services - McDonald's</title>
 </head>
 <body>
@@ -14,6 +15,7 @@
                 <li><a href="about.html">About</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
             </ul>
         </nav>
     </header>
@@ -21,6 +23,90 @@
     <main>
         <h2>Our Menu</h2>
         <p>At McDonald's, we offer a wide range of delicious items on our menu...</p>
+        <legend>Order your Food</legend>
+
+
+          <label for="email">Email-address</label>
+          <input type="email" id="emailAddress" placeholder="Enter your email" required>
+          <label for="password">Password</label>
+          <input type="password" id="password"  placeholder="Enter your Password" required>
+          <label for="Phone Number">Phone Number</label><br>
+          <input type="textbox" id="Phone Number" placeholder="Enter Phone Number" required>
+          
+
+<br>
+
+          
+          <label for="number">size:</label><br>
+          <input type="number" id="number" name="number" class="full"/>
+          <br />
+
+          
+          <label for="size">Size:</label>
+          <select id="size" name="size">
+            <option value="select">Select</option>
+            <option value="small">Small(6 slices)</option>
+            <option value="medium">Medium(8 slices)</option>
+            <option value="Large">Large(10 slices)</option>
+          </select>
+
+<br>
+
+
+
+          
+          <div class="shape">
+          <label>Shape of Piza:</label>
+          <input type="radio" id="round" value="round" name="shape" />
+          <label for="round">Round</label> 
+          <input type="radio" id="square" value="square" name="shape" /> 
+          <label for="square">Square</label> 
+        </div>
+<br>
+
+          
+          <div class="topp">
+          <label >Toppings:</label>
+          <input type="checkbox" id="Pepperoni" value="Pepperoni" name="topping" />
+          <label for="Pepperoni">Pepperoni</label> 
+          <input type="checkbox" id="Mushroom" value="Mushroom" name="topping" /> 
+          <label for="Mushroom">Mushroom</label> 
+          <input type="checkbox" id="Cheese" value="Cheese" name="topping" /> 
+          <label for="Cheese">Cheese</label> 
+          <input type="checkbox" id="garlic" value="garlic" name="topping" /> 
+          <label for="Garlic">Garlic</label> 
+          <input type="checkbox" id="blackolives" value="blackolives" name="topping" /> 
+          <label for="blackolives">Black olives</label> 
+        </div>
+<br>
+          <label>Crust Type:</label>
+          <select id="crust" name="crust">
+          <option value="select">Select</option> 
+            <option value="Deep-dish">Deep-Dish</option>
+            <option value="Thin-crust">Thin-crust</option>
+            <option value="Flatbread">Flat bread</option>
+            <option value="Detroit-Style">Detroit-Style</option>
+            <option value="Chicago-style">Chicago-style</option>
+          </select>
+          <br>
+          <label>Order Type:</label>
+          <input type="radio" id="takeout" value="takeout" name="type">
+          <label for="takeout">Take out</label> 
+          <input type="radio" id="delivery" value="delivery" name="type" /> 
+          <label for="delivery">Delivery</label>
+          <input type="radio" id="eatin" value="eatin" name="type" /> 
+          <label for="eatin">Eat-In</label> <br>
+
+
+          <input type="submit" value="Submit">
+          <input type="reset" value="Reset">
+          
+
+        
+        </fieldset>
+      </form>
+    </main>
+    <div class="footer-text"></div>
         
     </main>
 
