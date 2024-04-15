@@ -3,49 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doctor Strange Movie Poster</title>
+    <title>Interactive Page</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <div class="poster">
-            <div class="poster-header">
-                <h1>Doctor Strange</h1>
-                <h2 class="tagline">Open Your Mind</h2>
-                <p class="tagline">The Universe Will Never Be The Same</p>
-            </div>
-            <img src="doc.jpg" alt="Doctor Strange Poster">
-            <div class="description">
-                
-            <div class="details">
-                <h2>Details</h2>
-                <p>"Doctor Strange" follows the journey of Dr. Stephen Strange, a 
-                     brilliant but arrogant neurosurgeon who seeks healing after a 
-                     devastating accident. In his quest, he discovers the mystical 
-                     arts and must harness their power to confront dark forces threatening
-                      the very fabric of reality.</p>
+    <header>
+        <div class="container">
+            <h1>Interactive Page</h1>
+            <nav>
                 <ul>
-                    <li><strong>Release Date:</strong> November 4, 2016</li>
-                    <li><strong>Director:</strong> Scott Derrickson</li>
-                    <li><strong>Producers:</strong> Kevin Feige, Charles Newirth, Victoria Alonso</li>
-                    <li><strong>Studio:</strong> Marvel Studios</li>
-                    <li><strong>Official Website:</strong> <a href="https://www.doctorstrangetickets.ca/" target="_blank">Visit</a></li>
-                    <li><strong>Social Media Hashtag:</strong> #DoctorStrange</li>
-                    <li><strong>Awards:</strong> Academy Award Nominee (Visual Effects)</li>
-                    <li><strong>Box Office:</strong> $677.7 million worldwide</li>
-                    <li><strong>Critical Acclaim:</strong> "A visually stunning journey into the mystical realm of magic." - [Publication Name]</li>
+                    <li><a href="#home">Home</a></li>
+                    
                 </ul>
-            </div>
-            <div class="reviews">
-                <h2>Reviews</h2>
-                <p>Click Here to Visit:</p>
-                <ul>
-                    <li><a href="https://www.rottentomatoes.com/m/doctor_strange_2016" target="_blank">Rotten Tomatoes</a></li>
-                    <li><a href="https://www.imdb.com/title/tt1211837/" target="_blank">IMDb</a></li>
-                    <li><a href="https://www.metacritic.com/movie/doctor-strange" target="_blank">Metacritic</a></li>
-                </ul>
-            </div>
+            </nav>
         </div>
+    </header>
+
+    <div class="container" id="home">
+        <section>
+            <h2>Welcome to the Interactive Page</h2>
+            <p>Hover over the cat image below to see magic happen!</p>
+            <div class="image-container">
+                <img src="cat.jpg" alt="Cute Cat" class="cat-image" id="catImage">
+            </div>
+            <p id="changeText">Hover over the cat!</p>
+
+            <form id="textInputForm">
+                <label for="userInput">Enter Text:</label>
+                <input type="text" id="userInput" name="userInput">
+                <button type="submit">Submit</button>
+            </form>
+            <p id="userText">Type something above and click Submit.</p>
+
+            <button id="colorButton">Change Background Color</button>
+        </section>
     </div>
+
+    <footer>
+        <div class="container">
+            <p>Contact Us: bhawanakhadka2003@email.com | Phone: 123-456-7890</p>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
 </body>
 </html>

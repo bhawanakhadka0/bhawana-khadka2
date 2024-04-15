@@ -1,64 +1,32 @@
-function printOutput(output){
-    document.getElementById("result").innerText="Result:"+ output;
-}
-
-
-function validateInput(num){
-    if (isNaN(num)){
-        alert("Enter a valid number");
-        return false;
-    }
-    return true;
-}
-
-function sum(){
-    var num1 = parseFloat(document.getElementById ("input1").value) ||0;
-    var num2 = parseFloat(document.getElementById ("input2").value) ||0;
-
-    if(!validateInput(num1) || !validateInput(num2)){
-        return;
-    }
-
-    var result=num1+num2;
-    printOutput(result);
-}
-
-function subtract(){
-    var num1 = parseFloat(document.getElementById ("input1").value) ||0;
-    var num2 = parseFloat(document.getElementById ("input2").value) ||0;
-
-    if(!validateInput(num1) || !validateInput(num2)){
-        return;
-    }  
-
-    var result=num1-num2;
-    printOutput(result);
-}
-
-function multiply(){
-    var num1 = parseFloat(document.getElementById ("input1").value) ||0;
-    var num2 = parseFloat(document.getElementById ("input2").value) ||0;
-
-    if(!validateInput(num1) || !validateInput(num2)){
-        return;
-    }  
-    var result=num1*num2;
-    printOutput(result);
-}
-function division(){
-    var num1 = parseFloat(document.getElementById ("input1").value) ||0;
-    var num2 = parseFloat(document.getElementById ("input2").value) ||0;
-
-    if(!validateInput(num1) || !validateInput(num2)){
-        return;
-    }  
+document.addEventListener('DOMContentLoaded', function() {
+    // Function to handle hover event on the cat image
+    var catImage = document.getElementById('catImage');
+    catImage.addEventListener('mouseover', function() {
+        document.getElementById('changeText').textContent = 'Magic happened!';
+    });
     
+    // Function to handle form submission
+    var textInputForm = document.getElementById('textInputForm');
+    textInputForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        var userInput = document.getElementById('userInput').value;
+        document.getElementById('userText').textContent = userInput;
+    });
 
-if (num2==0){
-    alert("cannot divide by zero");
-    return;
-}
+    // Function to handle button click for changing background color
+    var colorButton = document.getElementById('colorButton');
+    colorButton.addEventListener('click', function() {
+        var randomColor = getRandomColor();
+        document.body.style.backgroundColor = randomColor;
+    });
 
-var result= num1/num2;
-printOutput(result);
-}
+    // Helper function to generate a random color
+    function getRandomColor() {
+        var letters = '0123456789ABCDEF';
+        var color = '#';
+        for (var i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+    }
+});
